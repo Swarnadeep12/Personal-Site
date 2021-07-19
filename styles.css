@@ -4,7 +4,7 @@ body{
     color: #40514E;
     text-align: center;
     font-family: 'Merriweather', serif;
-    background-color: #E4F9F5;
+    background-color: #e0ebe8;
 }
 h1{
     color: #66BFBF;
@@ -38,7 +38,7 @@ a{
 }
 /* **************************HTML CLASS SELECTOR********************************** */
 .top-container{
-    background-color: #E4F9F5;
+    background-color: #e0ebe8;
     position: relative;
     padding-top: 100px;
     padding-bottom: 0;
