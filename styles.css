@@ -1,37 +1,33 @@
 /* **************************HTML TAGS SELECTOR********************************** */
 body{
     margin: 0;
-    color: #40514E;
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    background-color: #e0ebe8;
+    text-align: center !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 h1{
-    color: #66BFBF;
-    font-size: 4.37rem; /*16px==100% , 70px/16*100 ==437 1em=100% 70px/16px==4.37em */
+    color: #66BFBF !important;
+    font-size: 4.37rem !important; /*16px==100% , 70px/16*100 ==437 1em=100% 70px/16px==4.37em */
     /* rem(most preferable) is relative to root that means it will take 1em == 16px or 100% */
-    margin: 50px auto, 0, auto;
-    margin-bottom: 93.629;
-    font-family: 'Sacramento', cursive;
+    /* margin: 70px auto 93.629 !important; */
+    font-family: 'Sacramento', cursive !important;
+    font-weight: bolder !important;
 }
 h2{
-    color: #66BFBF;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.875em;
+    color: #66BFBF !important;
+    font-weight: bold !important;
+    font-size: 1.875rem !important;
 }
 h3{
-    color: #11999E;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: bold !important;
+    color: #11999E !important;
 }
 hr{
-    margin: 100px auto 100px auto;
-    border-style: dotted;
-    border-color:  #baeeee;
-    border-width: 10px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    width: 10%;
+    margin: 100px auto 100px !important;
+    border-style: dotted !important;
+    border-color:  #e0ebe8 !important;
+    border-width: 10px 0 0!important;
+    background-color: white !important;
+    width: 10% !important;
 }
 a{
     color: #11999E;
@@ -39,9 +35,7 @@ a{
 /* **************************HTML CLASS SELECTOR********************************** */
 .top-container{
     background-color: #e0ebe8;
-    position: relative;
-    padding-top: 100px;
-    padding-bottom: 0;
+    padding-top: 10%!important;
 }
 .middle-container{
     margin: 100px 0;
@@ -53,41 +47,42 @@ a{
 }
 .top-cloud{
     position: absolute;
-    right: 300px;
-    top: 40px;
+    right: 35%;
+    top:75px;
+    width: 10%;
 }
 .bottom-cloud{
-    position: absolute;
-    left: 250px;
-    bottom: 300px;
+    display: block;
+    margin-left: 15%;
+    width: 10%;
 }
 .mountain-img{
-    /* background-color: #40514E; */
+    width: 60%;
 }
 .profile{
-    width: 800px ;
+    /* width: 700px ; */
     margin: auto;
 }
-.web-development{
-    width: 25%;
-    float: left;
-    margin-right: 30px;
-}
+
 /* .web-dev-description{
     clear:left;
 } */
-.data-structure{
-    width: 25%;
-    float: right;
-    margin-left: 30px;
-}
+
 /* .data-structure-description{
     clear: right;
 } */
+.data-structure{
+    width: 200px;
+    margin-bottom: 17px !important;
+}
+.web-development{
+    width: 200px;
+    
+}
 .skill-row{
     width: 50%;
-    margin:100px auto 100px auto;
-    text-align: left;
+    margin:100px auto 100px;
+    /* text-align: left; */
     line-height: 2;
 
 }
@@ -99,11 +94,11 @@ a{
 .footer-link
 {
     color: #11999E;
-    padding: 30px;
+    padding: 20px;
     text-decoration: none;
 }
-.footer-link:hover{
-    color: #EAF6F6;
+a:hover{
+    color: #EAF6F6 !important;
 }
 .copy-right{
     margin-top: 50px;
@@ -120,7 +115,7 @@ a{
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
     border-radius: 8px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif !important;
     color: #ffffff;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
@@ -136,6 +131,56 @@ a{
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
   }
+.navbar img{
+    width: 40px !important;
+}
+.nav-item{
+    padding-right: 30px !important;
+}
+.background{
+    background-color: #e0ebe8 !important;
+}
+.background a{
+    color: #66BFBF !important;
+}
+.background a:hover{
+    color:white !important;
+}
+.navbar-toggler
+{
+    color: #66BFBF !important;
+    padding-right: 35px !important;
+}
 #programmer{
     font-weight: normal;
+}
+@media (max-width : 600px)
+{
+    h1{
+        font-size: 2.5rem !important;
+    }
+    h2{
+        font-size: 1.4rem !important;
+    }
+    .bottom-cloud{
+        width: 15%;
+    }
+    .top-cloud{
+        width: 15%;
+    }
+}
+@media (min-width : 700px) {
+    .web-development{
+        width: 25%;
+        float: left;
+        margin-right: 30px;
+    }
+    .skill-row{
+        text-align: left;
+    }
+    .data-structure{
+        width: 25%;
+        float: right;
+        margin-left: 30px;
+    }
 }
