@@ -94,7 +94,7 @@ a{
 .footer-link
 {
     color: #11999E;
-    padding: 20px;
+    padding: 7px;
     text-decoration: none;
 }
 a:hover{
@@ -151,6 +151,16 @@ a:hover{
     color: #66BFBF !important;
     padding-right: 35px !important;
 }
+.footer-link{
+    display: block;
+}
+.fab-link{
+    display: inline-block;
+}
+.colr{
+    color:#055052;
+    font-size: 30px;
+}
 #programmer{
     font-weight: normal;
 }
@@ -167,6 +177,21 @@ a:hover{
     }
     .top-cloud{
         width: 15%;
+    }
+    .skill-row{
+        width: 80%;
+        margin:100px auto 100px;
+        /* text-align: left; */
+        line-height: 2;
+    
+    }
+    .contact-me{
+        line-height: 2;
+        width: 80%;
+        margin: 40px auto 60px;
+    }
+    .navbar img{
+        width: 30px !important;
     }
 }
 @media (min-width : 700px) {
